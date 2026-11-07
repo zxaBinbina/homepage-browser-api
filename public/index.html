@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>网页浏览环境</title>
+    <style>
+      html,
+      body,
+      #frame-root {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        background: #151b28;
+        color: #a8b4c8;
+        font: 14px system-ui;
+      }
+      iframe {
+        display: block;
+        border: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+      }
+      #notice {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        padding: 24px;
+      }
+      #notice[hidden] {
+        display: none;
+      }
+    </style>
+    <script src="/config.js"></script>
+    <script src="/vendor/scramjet/scramjet.all.js"></script>
+    <script type="module" src="/bridge.js"></script>
+  </head>
+  <body>
+    <div id="notice" role="status">正在准备浏览环境…</div>
+    <div id="frame-root"></div>
+  </body>
+</html>

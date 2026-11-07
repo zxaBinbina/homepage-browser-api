@@ -1,0 +1,5 @@
+# Documentation template only; these empty values do not enable authentication.
+# Run node scripts/generate-secrets.mjs to create .dev.vars and .secrets/.
+# Do not copy this template over an existing .dev.vars or commit generated values.
+AUTH_PASSWORD_HASH=""
+AUTH_SIGNING_KEY=""
